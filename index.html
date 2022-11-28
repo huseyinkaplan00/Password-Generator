@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Password Generator">
+    <meta name="keywords" content="Password, Password Generator">
+    <meta name="author" content="Huseyin Kaplan">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./image/password.png">
+    <title> Password Generator | Homepage </title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="mainBox">
+            <div class="darkLight">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span id="onOff" class="slider round"></span>
+                </label>
+
+            </div>
+            <div class="contentOne">
+                <h1 id="headOne">Generate a <br> <span>random password</span></h1>
+                <h2 id="headTwo">Never use an insecure password again.</h2>
+                <div class="passLength">
+                    <div class="details">
+                        <label class="title">Password Length</label>
+                        <span id="textRange">15</span>
+                    </div>
+                    <input id="rangeSlide" type="range" min="0" max="15" step="1" value="15">
+
+                </div>
+
+
+                <button id="passBtn">Generate passwords</button>
+                <div class="line">
+                </div>
+                <div class="contentTwo">
+                    <button id="buttonOne"></button>
+                    <button id="buttonTwo"></button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+@media screen and (max-width: 480px) {
+
+    body {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        .mainBox {
+            max-width: 391px !important;
+
+            .darkLight {
+                top: 48px !important;
+                right: 42px !important;
+            }
+
+            .contentOne {
+                margin-top: 93px !important;
+                margin-left: 42px !important;
+                margin-right: 44px !important;
+
+                #headOne {
+                    font-size: 35px !important;
+                }
+
+                #headTwo {
+                    font-size: 15px !important;
+                }
+
+                .line {
+                    width: 314px !important;
+                }
+            }
+
+            .contentTwo {
+                justify-content: flex-start !important;
+
+                button {
+                    width: 155px !important;
+                    margin-right: 5px !important;
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Karla:ital,wght@0,800;1,800&display=swap");
+@media screen and (max-width: 480px) {
+  body {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  body .mainBox {
+    max-width: 391px !important;
+  }
+  body .mainBox .darkLight {
+    top: 48px !important;
+    right: 42px !important;
+  }
+  body .mainBox .contentOne {
+    margin-top: 93px !important;
+    margin-left: 42px !important;
+    margin-right: 44px !important;
+  }
+  body .mainBox .contentOne #headOne {
+    font-size: 35px !important;
+  }
+  body .mainBox .contentOne #headTwo {
+    font-size: 15px !important;
+  }
+  body .mainBox .contentOne .line {
+    width: 314px !important;
+  }
+  body .mainBox .contentTwo {
+    justify-content: flex-start !important;
+  }
+  body .mainBox .contentTwo button {
+    width: 155px !important;
+    margin-right: 5px !important;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(-45deg, #1e1e24, #c4af9a, #6b4d57, #2C302E);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.colorOne {
+  background-color: rgba(255, 255, 255, 0.342) !important;
+}
+
+.colorTwo {
+  color: #1F2937 !important;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container .mainBox {
+  background: rgba(31, 41, 55, 0.568627451);
+  width: 100%;
+  max-width: 550px;
+  height: 550px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .mainBox .darkLight {
+  margin: 0;
+  height: 0;
+  position: absolute;
+  top: 72px;
+  right: 86px;
+  /* Rounded sliders */
+}
+.container .mainBox .darkLight .switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 24px;
+}
+.container .mainBox .darkLight .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.container .mainBox .darkLight .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(10, 9, 9);
+  transition: 0.4s;
+}
+.container .mainBox .darkLight .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(247, 244, 244);
+  transition: 0.4s;
+}
+.container .mainBox .darkLight input:checked + .slider {
+  background-color: #4ADF86;
+}
+.container .mainBox .darkLight input + .slider {
+  box-shadow: 0 0 5px #111112;
+}
+.container .mainBox .darkLight input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.container .mainBox .darkLight .slider.round {
+  border-radius: 34px;
+}
+.container .mainBox .darkLight .slider.round:before {
+  border-radius: 50%;
+}
+.container .mainBox .contentOne {
+  margin-top: 93px;
+  margin-left: 52px;
+  margin-right: 52px;
+}
+.container .mainBox .contentOne h1 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.container .mainBox .contentOne h1 span {
+  color: #4ADF86;
+}
+.container .mainBox .contentOne h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: #D5D4D8;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.container .mainBox .contentOne .passLength {
+  margin-top: 20px;
+}
+.container .mainBox .contentOne .passLength .details {
+  display: flex;
+  justify-content: space-between;
+  font-family: Inter;
+  margin-bottom: 10px;
+}
+.container .mainBox .contentOne .passLength .details .title {
+  color: #10B981;
+  font-weight: 600;
+}
+.container .mainBox .contentOne .passLength .details #textRange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #4ADF86;
+  padding: 3px;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 20px;
+}
+.container .mainBox .contentOne .passLength input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: black;
+}
+.container .mainBox .contentOne .passLength input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5.4px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container .mainBox .contentOne .passLength input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 2px solid gray;
+  height: 15px;
+  width: 15px;
+  background: #010101;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+.container .mainBox .contentOne .passLength input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(190, 190, 209, 0.831372549);
+}
+.container .mainBox .contentOne .passLength input[type=range]:focus {
+  outline: none;
+}
+.container .mainBox .contentOne button {
+  width: 191px;
+  height: 42px;
+  background: #10B981;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-top: 31px;
+}
+.container .mainBox .contentOne .line {
+  width: 446px;
+  height: 0px;
+  left: 52px;
+  top: 361px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  border-bottom: 1px solid #2F3E53;
+}
+.container .mainBox .contentTwo {
+  display: flex;
+  justify-content: space-between;
+}
+.container .mainBox .contentTwo button {
+  margin: 0;
+  background: #273549;
+  border-radius: 6px;
+  width: 211px;
+  height: 39px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
